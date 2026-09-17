@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         fieldset {
+            background-color: aqua;
+            
+         }
+
+         fieldset legend {
+
+            background-color: blue;
+            
+         }
+    </style>
+</head>
+<body>
+
+    <h1>Exemplo de formulario</h1>
+
+    <form>
+
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="sexo" id="masc">
+
+            <label for="masc">Masculino<br></label>
+
+            <input type="radio" name="sexo" id="fem" checked> 
+
+            <label for="fem">Feminino</label>
+
+
+
+
+        </fieldset>
+
+        <fieldset> 
+
+            <legend> Esportes favoritos</legend>
+
+            <input type="checkbox" name="esport" id="fut" bra checked>
+
+            <label for="fut">Futebool</label> <br>
+
+            <input type="checkbox" name="esport" id="basq"bra>
+
+            <label for="basq">Basquete</label> <br>
+
+            <input type="checkbox" name="esport" id="vole"bra>
+
+            <label for="vole">Volei</label>
+
+        </fieldset>
+
+
+     <p>
+     <input type="submit" value="enviar">
+
+     <input type="reset" value="limpar">
+
+     </p>
+
+    </form>
+    
+</body>
+</html>

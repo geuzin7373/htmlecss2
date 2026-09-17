@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="cadrasto.php">
+
+        <p>
+            <label for="ano">Em que ano vc nasceu?</label>
+
+            <input type="number" name="ano" id="iano" min="2000" max="2026" oninput="calcidade()">
+
+
+        </p>
+
+        <p><label for="iidade">Sua idade é:</label>
+            <output id="iidade">0</output>
+
+        </p>
+
+
+
+
+
+
+
+
+    </form>
+
+
+    <script>
+        function calcidade() {
+            const ano = document.getElementById('iano');
+            const idade = document.getElementById('iidade');
+
+
+            const atual = new Date().getFullYear();
+            idade.textContent = atual - Number(ano.value);
+        }
+    </script>
+</body>
+
+</html>

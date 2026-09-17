@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="cadrasto.php">
+
+        <p>
+            <label for="n1">Numero 1</label>
+            <input type="number" name="numero" id="n1" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+        
+        </p>
+
+        <label for="in2">Numero 2</label>
+
+        <input type="number" name="numero" id="n2" min="0" max="50" required oninput="soma.innerHTML = Number(n1.value) + Number(n2.value)">
+
+
+        <p><label for="soma"></label>
+
+            <output id="soma">0</output>
+        
+        
+        
+        </p>
+
+
+
+
+
+        <p> <input type="submit">
+            <input type="reset"></p>
+
+
+
+
+    </form>
+
+  
+
+
+    
+</body>
+</html>
